@@ -67,10 +67,10 @@ The project compares different HPO algorithms on CNN and Transformer models, eva
 
 ## Contributors
 
-- [Your Name]
-- [Team Member 1]
-- [Team Member 2]
-- ...
+- Zheng Fang
+- Ingrid Jin
+- Mian Dai
+- Ruifu (Jeff) Chen
 
 ## License
 
