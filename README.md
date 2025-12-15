@@ -59,7 +59,7 @@ pip install torch torchvision optuna numpy matplotlib seaborn pandas scikit-lear
    python plot_results.py
    ```
 
-5. **Run the Complete Notebook**: Open `combined.ipynb` and execute all cells for a comprehensive walkthrough.
+5. **Run the Complete Notebook**: Open `combined.ipynb` and execute all cells, this is code for grid search, random search and standard BO.
 
 ## Results
 
