@@ -66,6 +66,9 @@ pip install torch torchvision optuna numpy matplotlib seaborn pandas scikit-lear
 
 Grid Search exhaustively evaluates combinations of hyperparameters from predefined candidate sets. For this project, only 30 out of 240 combination were tested due to computational cost. Each configuration trains a CNN (Model 2) for 3 epochs on the training set, and the best validation accuracy from that run is recorded. All grid search trials are logged in JSONL format under: bo_logs/grid_trials.jsonl.
 
+## Random Search
+
+Random Search samples hyperparameters uniformly at random from predefined candidate sets. All trials are logged in JSONL format under: bo_logs/random_trials.jsonl.
 
 ## Bayesian Optimization (Optuna)
 
