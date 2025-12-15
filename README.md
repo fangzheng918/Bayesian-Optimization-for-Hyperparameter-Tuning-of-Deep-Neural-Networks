@@ -62,6 +62,11 @@ pip install torch torchvision optuna numpy matplotlib seaborn pandas scikit-lear
 5. **Run the Complete Notebook**: Open `combined.ipynb` and execute all cells, this is code for grid search, random search and standard BO.
 
 
+## Grid Search
+
+Grid Search exhaustively evaluates combinations of hyperparameters from predefined candidate sets. For this project, only 30 out of 240 combination were tested due to computational cost. Each configuration trains a CNN (Model 2) for 3 epochs on the training set, and the best validation accuracy from that run is recorded. All grid search trials are logged in JSONL format under: bo_logs/grid_trials.jsonl.
+
+
 ## Bayesian Optimization (Optuna)
 
 Bayesian Optimization is implemented using Optuna to tune a CNN baseline on FashionMNIST. The model is trained with an 8:2 train/validation split. For each trial, Optuna searches over hidden_units, batch_size, learning rate, and weight_decay. Each configuration is trained for 3 epochs, and the best validation accuracy within the trial is recorded.
