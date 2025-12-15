@@ -59,6 +59,13 @@ pip install torch torchvision optuna numpy matplotlib seaborn pandas scikit-lear
    python plot_results.py
    ```
 
+## Bayesian Optimization (Optuna)
+
+Bayesian Optimization is implemented using Optuna to tune a CNN baseline on FashionMNIST. The model is trained with an 8:2 train/validation split. For each trial, Optuna searches over hidden_units, batch_size, learning rate, and weight_decay. Each configuration is trained for 3 epochs, and the best validation accuracy within the trial is recorded.
+
+All trials are logged in JSONL format under `bo_logs/bo_trials.jsonl`, including hyperparameters, best validation accuracy, training time, and per-epoch metrics. These logs are then parsed to generate plots showing validation accuracy versus trial index, cumulative training time, and individual trial performance.
+
+
 5. **Run the Complete Notebook**: Open `combined.ipynb` and execute all cells, this is code for grid search, random search and standard BO.
 
 ## Results
